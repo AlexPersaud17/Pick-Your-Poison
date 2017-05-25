@@ -1,0 +1,20 @@
+
+
+<ul>
+<%@body["result"].each do |drink|%>
+<br>
+<li><%= drink["name"] %></li>
+
+
+<ul>
+
+  <%drink["ingredients"].each do |item| %>
+    <li><%= item["textPlain"] %></li>
+  <% end %>
+
+  <li><%= drink["descriptionPlain"] %></li>
+</ul>
+
+  <% end %>
+
+</ul>
