@@ -42,7 +42,7 @@ input {
 
 }
 
-/*#drink-description-container{
+#drink-description-container{
   width: 500px;
   background-color: black;
   border: dashed white 3px;
@@ -50,7 +50,7 @@ input {
   position: absolute;
   left: 30%;
   top: 35%;
-}*/
+}
 
 #drink-description-container li{
   color: white;
