@@ -1,10 +1,10 @@
 post '/favorites' do
-  Favorite.create(user: current_user, cocktail_id: params[:cocktail_id])
-  redirect "/users/#{current_user.username}"
+  favorite = Favorite.create(user: current_user, cocktail_id: params[:cocktail_id])
+  redirect "/cocktails/#{favorite.cocktail_id}"
 end
 
 post '/favorites/remove' do
   favorite = Favorite.find_by(user: current_user, cocktail_id: params[:cocktail_id])
   favorite.destroy
-  redirect "/users/#{current_user.username}"
+  redirect "/cocktails/#{favorite.cocktail_id}"
 end

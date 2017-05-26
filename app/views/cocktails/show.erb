@@ -10,17 +10,21 @@
   </ul>
   <li><%=@cocktail.description%></li>
 </ul>
-<% if logged_in? && @cocktail.favorites.where(user_id: current_user.id).length == 0 %>
-  <form action="/favorites" method="post">
-    <input type="hidden" name=cocktail_id value="<%=@cocktail.id%>">
-    <input type="submit" value="Star this Drink">
-  </form>
-<% end %>
 
-<% if logged_in? && @cocktail.favorites.where(user_id: current_user.id).length != 0 %>
-  <form action="/favorites/remove" method="post">
-    <input type="hidden" name=cocktail_id value="<%=@cocktail.id%>">
-    <input type="submit" value="Unstar this Drink">
-  </form>
-<% end %>
+<div class="star-container">
+  <% if logged_in? && @cocktail.favorites.where(user_id: current_user.id).length == 0 %>
+    <form action="/favorites" method="post">
+      <input type="hidden" name=cocktail_id value="<%=@cocktail.id%>">
+      <input type="submit" value="Star this Drink">
+    </form>
+  <% end %>
+
+  <% if logged_in? && @cocktail.favorites.where(user_id: current_user.id).length != 0 %>
+    <form action="/favorites/remove" method="post">
+      <input type="hidden" name=cocktail_id value="<%=@cocktail.id%>">
+      <input type="submit" value="Unstar this Drink">
+    </form>
+  <% end %>
+  </div>
+
 </div>

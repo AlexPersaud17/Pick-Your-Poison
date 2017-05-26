@@ -1,7 +1,7 @@
 <div id="results-container">
 
   <% if @cocktails.length != 0 %>
-    <h1>Results:</h1>
+    <h1>How about a...</h1>
       <ul>
       <% @cocktails.each do |cocktail| %>
         <li><a class='result-list-item' href="/cocktails/<%=cocktail.id%>" id="cocktail-<%=cocktail.id%>"><%=cocktail.name%></a></li>
