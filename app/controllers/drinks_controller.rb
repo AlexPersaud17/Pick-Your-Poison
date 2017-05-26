@@ -8,6 +8,7 @@ post '/search' do
   response = Net::HTTP.get_response(uri)
   @body = JSON.parse(response.body)
   search_results = []
+
   @body["result"].each do |drink|
     cocktail =  Cocktail.find_or_create_by(name: drink["name"], isAlcoholic: drink["isAlcoholic"], description: drink["descriptionPlain"])
     drink["ingredients"].each do |ingredient|
@@ -22,5 +23,9 @@ end
 
 get '/cocktails/:cocktail_id' do
   @cocktail = Cocktail.find_by(id: params[:cocktail_id])
-  erb :'cocktails/show'
+  if request.xhr?
+    erb :'cocktails/show', layout: false
+  else
+    erb :'cocktails/show'
+  end
 end

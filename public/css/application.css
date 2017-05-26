@@ -1,4 +1,5 @@
 body {
+  display: none;
   background: url(http://wallpapersdsc.net/wp-content/uploads/2016/09/Cocktail-HD-Wallpaper.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,6 +13,10 @@ h1, p, h2{
 
 input {
   background-color: black;
+  color: white;
+}
+
+.result-list-item{
   color: white;
 }
 
@@ -37,7 +42,7 @@ input {
 
 }
 
-#drink-description-container{
+/*#drink-description-container{
   width: 500px;
   background-color: black;
   border: dashed white 3px;
@@ -45,7 +50,7 @@ input {
   position: absolute;
   left: 30%;
   top: 35%;
-}
+}*/
 
 #drink-description-container li{
   color: white;

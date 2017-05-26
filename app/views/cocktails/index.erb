@@ -4,7 +4,9 @@
     <h1>Results:</h1>
       <ul>
       <% @cocktails.each do |cocktail| %>
-        <li><a href="/cocktails/<%=cocktail.id%>"><%=cocktail.name%></a></li>
+        <li><a class='result-list-item' href="/cocktails/<%=cocktail.id%>" id="cocktail-<%=cocktail.id%>"><%=cocktail.name%></a></li>
+        <div id="cocktail-<%=cocktail.id%>">
+        </div>
       <br><br>
       <% end %>
       </ul>
