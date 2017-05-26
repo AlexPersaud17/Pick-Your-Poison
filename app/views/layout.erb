@@ -13,6 +13,19 @@
   <title></title>
 </head>
 <body>
+
+<ul id='nav-bar'><li class='nav-list'>
+    <li class='nav-list'><a class="nav-link" href="/">Home</a></li>
+  <% if logged_in? %>
+    <li class='nav-list'><a class="nav-link" href="/users/<%=current_user.username%>"><%=current_user.username%></a></li>
+    <li class='nav-list'><a class="nav-link" href="/users/logout">Logout</a></li>
+  <% else %>
+    <li class='nav-list'><a class="nav-link" href="/users/login">Login</a></li>
+    <li class='nav-list'><a class="nav-link" href="/users/new">Register</a></li>
+  <% end %>
+</ul>
+
+
   <%= yield %>
 </body>
 </html>

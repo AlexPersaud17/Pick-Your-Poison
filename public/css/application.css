@@ -1,0 +1,96 @@
+body {
+  background: url(http://wallpapersdsc.net/wp-content/uploads/2016/09/Cocktail-HD-Wallpaper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, p, h2{
+  color: white;
+}
+
+input {
+  background-color: black;
+  color: white;
+}
+
+
+#search-form-container{
+  background-color: black;
+  border: dashed white 3px;
+  padding: 20px;
+  position: absolute;
+  left: 38%;
+  top: 40%;
+}
+
+#results-container{
+  width: 400px;
+  background-color: black;
+  position: absolute;
+  left: 33%;
+  top: 20%;
+  border: dashed white 3px;
+  border-width: 5px;
+  padding: 20px;
+
+}
+
+#drink-description-container{
+  width: 500px;
+  background-color: black;
+  border: dashed white 3px;
+  padding: 20px;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
+
+#drink-description-container li{
+  color: white;
+}
+
+#favorites-container{
+  background-color: black;
+  border: dashed white 3px;
+  padding: 20px;
+  position: absolute;
+  left: 38%;
+  top: 35%;
+}
+
+#login-container, #register-container{
+  background-color: black;
+  border: dashed white 3px;
+  padding: 20px;
+  position: absolute;
+  left: 38%;
+  top: 35%;
+}
+
+#nav-bar {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.nav-list {
+    float: left;
+}
+
+.nav-list .nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-list .nav-link:hover {
+    background-color: #999;
+}

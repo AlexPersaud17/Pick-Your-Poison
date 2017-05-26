@@ -1,0 +1,10 @@
+<div id="results-container">
+
+<h1>Results:</h1>
+<ul>
+<% @cocktails.each do |cocktail| %>
+  <li><a href="/cocktails/<%=cocktail.id%>"><%=cocktail.name%></a></li>
+<br><br>
+<% end %>
+</ul>
+</div>

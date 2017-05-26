@@ -15,6 +15,7 @@ gem 'rake'
 gem 'shotgun', '~>0.9.1'
 gem 'pry'
 gem 'dotenv'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 group :test do
   gem 'shoulda-matchers'

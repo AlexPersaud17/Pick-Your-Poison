@@ -1,0 +1,15 @@
+<div id="favorites-container">
+<h1>Stay Thirsty, <%=current_user.username%>.</h1>
+
+<% if current_user.favorites.length != 0 %>
+
+<h2>Your Favorites: </h2>
+
+  <ul>
+  <%current_user.favorites.each do |favorite|%>
+  <li><a href='/cocktails/<%=favorite.cocktail.id%>'><%=favorite.cocktail.name%></a></li>
+  <% end %>
+  </ul>
+<% end %>
+
+</div>
