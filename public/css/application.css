@@ -1,5 +1,5 @@
 body {
-  background: url(http://wallpapersdsc.net/wp-content/uploads/2016/09/Cocktail-HD-Wallpaper.jpg) no-repeat center center fixed; 
+  background: url(http://wallpapersdsc.net/wp-content/uploads/2016/09/Cocktail-HD-Wallpaper.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,7 +90,6 @@ input {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 .nav-list .nav-link:hover {
     background-color: #999;
 }
